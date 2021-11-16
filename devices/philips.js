@@ -30,6 +30,15 @@ const hueExtend = {
 
 module.exports = [
     {
+        zigbeeModel: ['4076130P6'],
+        model: '4076130P6',
+        vendor: 'Philips',
+        description: 'Hue white ambiance suspension Cher black with bluetooth 3000lm',
+        meta: {turnsOffAtBrightness1: true},
+        extend: extend.light_onoff_brightness_colortemp({colorTempRange: [153, 500]}),
+        ota: ota.zigbeeOTA,
+    },
+    {
         zigbeeModel: ['4076131P6'],
         model: '4076131P6',
         vendor: 'Philips',
